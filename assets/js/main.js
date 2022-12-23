@@ -222,10 +222,10 @@
 				if ($image.length > 0) {
 
 					// Set image.
-						$this.css('background-image', 'url(' + $img.attr('src') + ')');
+						// $this.css('background-image', 'url(' + $img.attr('src') + ')');
 
 					// Hide original.
-						$image.hide();
+						// $image.hide();
 
 				}
 
@@ -280,7 +280,6 @@
 				event.stopPropagation();
 			})
 			.on('click', 'a', function(event) {
-
 				var href = $(this).attr('href');
 
 				event.preventDefault();
@@ -333,3 +332,10 @@
 			});
 
 })(jQuery);
+
+
+		//scroll to top of page function
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		  };
